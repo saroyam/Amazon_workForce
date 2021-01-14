@@ -1,0 +1,227 @@
+
+/*html, body{
+	width: 100%;
+	height: 100%;
+}
+#wrapper{
+		width: 100%;
+		height: 100%;
+		overflow: scroll;
+    /*-webkit-overflow-scrolling: touch;*/
+	/*} */
+ul:first-child {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #28292b;
+  color:#ffe473;
+
+}
+header{
+  position: fixed;
+  z-index: 2;
+  right: .5%;
+  left: .5%;
+  top:1%;
+}
+button{
+  background-color: #ffe473;
+  border:none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ffe473;
+}
+
+li {
+  float: left;
+
+}
+
+li button{
+
+  color: #28292b;
+  text-align: center;
+  border:none;
+  background-color: #ffe473;
+
+}
+
+
+
+ li button:hover:not(.active) {
+  background-color: #28292b;
+  color:#ffe473;
+}
+
+.active {
+  background-color: #28292b;
+  color:#ffe473;
+}
+
+#pacman {
+  width: 0px;
+  height: 0px;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #ffe473;
+  border-left: 20px solid #ffe473;
+  border-bottom: 20px solid #ffe473;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-repeat: no-repeat;
+  background-color: #454545;
+  background-image: url("../images/back.jpg");
+  z-index: 1;
+  background-size: cover;
+  background-attachment: fixed;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.hero-image {
+
+  height:700px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.button {
+  background-color: #ffe473; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button1 {
+  background-color: transparent;
+
+  color: white;
+  border: 2px solid #ffe473;
+}
+
+.button1:hover {
+  background-color: #ffe473;
+
+  color: #28292b;
+}
+.button2 {
+  background-color: transparent;
+  color: white;
+  border: 2px solid #ffe473;
+}
+
+
+
+.button2:hover {
+  background-color: #ffe473;
+  color: #28292b;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+@viewport{
+  zoom:1.0;
+  width:extend-to-zoom;
+}
+@-ms-viewport{
+  width:extend-to-zoom;
+  zoom:1.0;
+}
+
+@media only screen and (max-width:479px) {
+
+  body{
+    background-color: #454545;
+    background-image: url("lol.png");
+  }
+  h3{
+    font-size: 15px;
+  }
+  h1{
+    font-size: 30px;
+  }
+}
+
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 500px;
+  padding: 10px;
+  background-color: black;
+  
+  
+}
+
+
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+table, th, td {
+  border: none;
+  border-collapse: collapse;
+}
+table{
+    width: 100%;
+}
+th, td {
+  padding: 15px;
+}

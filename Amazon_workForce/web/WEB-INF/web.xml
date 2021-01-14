@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>addAssociates</servlet-name>
+        <servlet-class>com.amazon_workForce.servlet.addAssociates</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>addLocation</servlet-name>
+        <servlet-class>com.amazon_workForce.servlet.addLocation</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>wheretogo</servlet-name>
+        <servlet-class>com.amazon_workForce.servlet.wheretogo</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addAssociates</servlet-name>
+        <url-pattern>/addAssociates</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>addLocation</servlet-name>
+        <url-pattern>/addLocation</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>wheretogo</servlet-name>
+        <url-pattern>/wheretogo</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
